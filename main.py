@@ -123,7 +123,7 @@ def buscar_usuario(nombre_cliente):
     
     if contar >=2:
         # else:
-        print('El Cliente no existe en el sistema')
+        print('\nEl Cliente no existe en el sistema')
             
         
     input('\nPresiona ENTER para continuar\n')
