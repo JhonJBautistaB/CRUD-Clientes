@@ -91,9 +91,10 @@ def eliminar_usuario(index):
         if index == idx:
             Clientes.pop(index)
             print('!Cliente eliminado con exito¡')
-        else:
-            print('No fue posible Eliminar el cliente, No se encontró en la Base de Datos')
-        
+            break
+    else:
+        print('No fue posible Eliminar el cliente, No se encontró en la Base de Datos')
+    
     input('Presiona ENTER para continuar\n')
 
 
@@ -114,6 +115,7 @@ def buscar_usuario(nombre_cliente):
             email=cliente['email'],
             cargo=cliente['cargo']
             ))
+            print('')
             return True
             break
         
