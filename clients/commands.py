@@ -1,37 +1,45 @@
 import click
+from clients.services import ClientService
+from clients.models import Client
 
 @click.group()
-def Clientes():
+def clients():
     """Adminitración de Clientes Importante"""
     pass
 
 
-@Clientes.command()
+@clients.command()
+@click.opcion('-n', '--name', type=str, prompt=True, help='The Client name')
+@click.opcion('-c', '--company', type=str, prompt=True, help='The Client company')
+@click.opcion('-e', '--email', type=str, prompt=True, help='The Client email')
+@click.opcion('-p', '--position', type=str, prompt=True, help='The Client position')
 @click.pass_context
-def crear(contexto, nombre, compania, email, cargo):
+def create(ctx, name, company, email, position):
     """Crear un Nuevo Cliente"""
-    pass
+    client = Client(name, company, email, position)
+    client_service = ClientService(ctx.obje['clients_table'])
 
+    client_service.create_client(client)
 
-@Clientes.command()
+@clients.command()
 @click.pass_context
-def listar(ctx):
+def list(ctx):
     """Listar todos los Cientes"""
     pass
 
 
-@Clientes.command()
+@clients.command()
 @click.pass_context
-def actualizar(ctx, clientes_uid):
+def update(ctx, clientes_uid):
     """Actualixzar Clientes"""
     pass
 
 
-@Clientes.command()
+@clients.command()
 @click.pass_context
-def Eliminar(ctx, clientes_uid):
+def delete(ctx, clientes_uid):
     """Eliminar Clientes"""
     pass
 
 
-all = Clientes
+all = clients
