@@ -9,15 +9,15 @@ def clients():
 
 
 @clients.command()
-@click.opcion('-n', '--name', type=str, prompt=True, help='The Client name')
-@click.opcion('-c', '--company', type=str, prompt=True, help='The Client company')
-@click.opcion('-e', '--email', type=str, prompt=True, help='The Client email')
-@click.opcion('-p', '--position', type=str, prompt=True, help='The Client position')
+@click.option('-n', '--name', type=str, prompt=True, help='The Client name')
+@click.option('-c', '--company', type=str, prompt=True, help='The Client company')
+@click.option('-e', '--email', type=str, prompt=True, help='The Client email')
+@click.option('-p', '--position', type=str, prompt=True, help='The Client position')
 @click.pass_context
 def create(ctx, name, company, email, position):
     """Crear un Nuevo Cliente"""
     client = Client(name, company, email, position)
-    client_service = ClientService(ctx.obje['clients_table'])
+    client_service = ClientService(ctx.obj['clients_table'])
 
     client_service.create_client(client)
 
