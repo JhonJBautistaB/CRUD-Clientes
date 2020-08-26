@@ -25,7 +25,21 @@ def create(ctx, name, company, email, position):
 @click.pass_context
 def list(ctx):
     """Listar todos los Cientes"""
-    pass
+    client_services = ClientService(ctx.obj['clients_table'])
+
+    client_list = client_services.list_clients()
+
+    click.echo(' ID   |  NAME  | COMPANY  |  EMAIL |  POSITION')
+    click.echo('*'*100)
+
+    for client in client_list:
+        click.echo('{uid} | {name} | {company} | {email} | {position}'. format(
+            uid = client['uid'],
+            name = client['name'],
+            company = client['company'],
+            email = client['email'],
+            position = client['position']
+        ))
 
 
 @clients.command()
