@@ -1,3 +1,4 @@
+[CRUDPython](Proyecto-Python-CRUD.png)
 # CRUD Python
 ## Proyecto de aprendizaje
 Curso practico de Python donde aplico los conocimientos y habilidades adquiridas en el [Curso Práctico de Python](https://platzi.com/clases/python-practico/) de [Platzi](https://platzi.com) donde aprendí a:
@@ -13,9 +14,9 @@ Curso practico de Python donde aplico los conocimientos y habilidades adquiridas
 ## Tecnologias usadas
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code> <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code> <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png"></code>
 
-## Demo Aplicacion
+## Demo Aplicacin
 
-
+[CRUDPython](print_soft.png)
 
 
 ## Redes Sociales
