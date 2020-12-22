@@ -1,4 +1,4 @@
-[CRUDPython](Proyecto-Python-CRUD.png)
+![CRUD](https://2.bp.blogspot.com/-pqTHEdAQ7Vs/V-hQyNCwnzI/AAAAAAAAADg/hQMk_hsphCg17rc4x-8eJBCqc8_Ytcs8gCLcB/s1600/mongodb-crud-operations1.png)
 # CRUD Python
 ## Proyecto de aprendizaje
 Curso practico de Python donde aplico los conocimientos y habilidades adquiridas en el [Curso Práctico de Python](https://platzi.com/clases/python-practico/) de [Platzi](https://platzi.com) donde aprendí a:
@@ -16,7 +16,7 @@ Curso practico de Python donde aplico los conocimientos y habilidades adquiridas
 
 ## Demo Aplicacin
 
-[CRUDPython](print_soft.png)
+<img src="print_soft.png" alt="software">
 
 
 ## Redes Sociales
